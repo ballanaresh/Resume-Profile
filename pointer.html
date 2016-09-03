@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+<style>
+#yin-yang {
+ width: 48px;
+ height: 96px;
+background:#eee;
+border-radius:50%;
+border-width:0px 50px 0px 0px;
+border-style:solid;
+ position: relative;
+}
+#yin-yang:after{
+  content:"";
+   position: absolute;
+   right: 100%;
+   top: 68px;
+left:-2px;
+   width: 0;
+   height: 0;
+   border-right: 50px solid transparent;
+   border-top: 50px solid #000;
+   border-left: 50px solid transparent;
+border-radius:50%;
+}
+#circle {
+ width: 0px;
+ height: 0px;
+background:#0f479b;
+border-radius:50%;
+border:10px solid #0f479b;
+ position: relative;
+}
+#circle:after{
+  content:"";
+   position: absolute;
+   right: 100%;
+   top: 4px;
+   left:-10px;
+   width: 0;
+   height: 0;
+   border-right: 10px solid transparent;
+   border-top: 10px solid #0f479b;
+   border-left: 10px solid transparent;
+border-radius:50%;
+}
+  </style>
+
+<div id="yin-yang"></div>
+
+<div id="circle"></div>
+</body>
+</html>
